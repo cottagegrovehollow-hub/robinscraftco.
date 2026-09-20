@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robin's Craft Co. — Handmade Goods & Digital Downloads</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">Robin's Craft Co.</div>
+    <div class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#digital">Digital</a>
+      <a href="#freebies">Freebies</a>
+      <a href="#about">About</a>
+    </div>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#shop" onclick="toggleMenu()">Shop</a>
+    <a href="#digital" onclick="toggleMenu()">Digital</a>
+    <a href="#freebies" onclick="toggleMenu()">Freebies</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Handmade with care. Shipped with love.</p>
+      <h1>Robin's Craft Co.</h1>
+      <p class="hero-sub">Custom composition books, snow globe tumblers, holiday gift tags, personalized cards, and digital downloads for makers.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="openModal('shop-modal')">Shop finished items</button>
+        <button class="btn-outline" onclick="openModal('digital-modal')">Browse digital downloads</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINISHED ITEMS -->
+  <section class="section" id="shop">
+    <div class="section-inner">
+      <p class="section-label">Finished & ready to ship</p>
+      <h2>Handmade items</h2>
+      <div class="card-grid">
+
+        <div class="product-card">
+          <div class="card-img" style="background:#f2e8e8;">
+            <span class="card-icon">📓</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Handmade</span>
+            <h3>Decorated composition book</h3>
+            <p>Custom holiday and seasonal designs. Great for gifting.</p>
+            <div class="card-footer">
+              <span class="price">From $12.00</span>
+              <button class="btn-sm" onclick="openModal('order-modal')">Order now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="card-img" style="background:#e8f0ef;">
+            <span class="card-icon">🥤</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Handmade</span>
+            <h3>Snow globe tumbler</h3>
+            <p>Custom Cricut designs. Holiday and year-round styles.</p>
+            <div class="card-footer">
+              <span class="price">From $28.00</span>
+              <button class="btn-sm" onclick="openModal('order-modal')">Order now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="card-img" style="background:#f5f0ea;">
+            <span class="card-icon">🎄</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Handmade</span>
+            <h3>Holiday gift tag sets</h3>
+            <p>Seasonal designs, ready to attach and gift.</p>
+            <div class="card-footer">
+              <span class="price">From $8.00</span>
+              <button class="btn-sm" onclick="openModal('order-modal')">Order now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="card-img" style="background:#eef1f5;">
+            <span class="card-icon">💌</span>
+          </div>
+          <div class="card-body">
+            <span class="badge">Handmade</span>
+            <h3>Personalized Christmas cards</h3>
+            <p>Custom name and message. Order early for the holidays.</p>
+            <div class="card-footer">
+              <span class="price">From $15.00</span>
+              <button class="btn-sm" onclick="openModal('order-modal')">Order now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL DOWNLOADS -->
+  <section class="section section-alt" id="digital">
+    <div class="section-inner">
+      <p class="section-label">For the makers</p>
+      <h2>Digital downloads</h2>
+      <div class="card-grid">
+
+        <div class="product-card">
+          <div class="card-img" style="background:#f2e8e8;">
+            <span class="card-icon">🎨</span>
+          </div>
+          <div class="card-body">
+            <span class="badge badge-blue">Instant download</span>
+            <h3>Holiday clipart pack</h3>
+            <p>PNG files ready for Cricut, Canva, and print projects.</p>
+            <div class="card-footer">
+              <span class="price">$5.00</span>
+              <button class="btn-sm" onclick="openModal('digital-modal')">Buy now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="card-img" style="background:#eef1f5;">
+            <span class="card-icon">✂️</span>
+          </div>
+          <div class="card-body">
+            <span class="badge badge-blue">Instant download</span>
+            <h3>SVG cut file bundle</h3>
+            <p>Compatible with Cricut and Silhouette. Commercial use OK.</p>
+            <div class="card-footer">
+              <span class="price">$4.00</span>
+              <button class="btn-sm" onclick="openModal('digital-modal')">Buy now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="card-img" style="background:#f5f0ea;">
+            <span class="card-icon">🖨️</span>
+          </div>
+          <div class="card-body">
+            <span class="badge badge-blue">Instant download</span>
+            <h3>Printable card set</h3>
+            <p>Print at home or send to a local print shop.</p>
+            <div class="card-footer">
+              <span class="price">$3.00</span>
+              <button class="btn-sm" onclick="openModal('digital-modal')">Buy now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FREEBIES -->
+  <section class="freebie-band" id="freebies">
+    <div class="freebie-inner">
+      <div class="freebie-text">
+        <p class="section-label" style="color:#e0b4b4;">Free for you</p>
+        <h2>Halloween coloring page</h2>
+        <p>A free printable — enter your email and download instantly. No strings, no spam.</p>
+        <div class="freebie-form">
+          <input type="email" id="freebieEmail" placeholder="your@email.com">
+          <button class="btn-primary" onclick="claimFreebie()">Claim your freebie</button>
+        </div>
+        <p class="freebie-note">More free seasonal downloads coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-inner">
+      <div class="about-text">
+        <p class="section-label">The maker behind it all</p>
+        <h2>Hi, I'm Robin.</h2>
+        <p>I'm a crafter, a maker, and a Hobby Lobby party department head based in Indian Trail, NC. I've been making things by hand for as long as I can remember — and now I'm turning that passion into something you can shop, download, and gift.</p>
+        <p>Every composition book, tumbler, and gift tag is made by me, in my home, with my Cricut and a whole lot of care. The digital files are made from the same designs I use myself — so if you're a maker, you can DIY your own version.</p>
+        <p>Thanks for being here. — Robin</p>
+      </div>
+      <div class="about-image">
+        <div class="about-placeholder">
+          <span>📸</span>
+          <p>Robin's photo<br>coming soon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Robin's Craft Co.</p>
+      <p class="footer-links">
+        <a href="#shop">Shop</a> &nbsp;·&nbsp;
+        <a href="#digital">Digital</a> &nbsp;·&nbsp;
+        <a href="#freebies">Freebies</a> &nbsp;·&nbsp;
+        <a href="https://www.facebook.com/rooteddailylife/" target="_blank">Facebook</a>
+      </p>
+      <p class="footer-copy">© 2026 Robin's Craft Co. · Indian Trail, NC</p>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- Order Modal -->
+  <div class="modal-overlay" id="order-modal" onclick="closeModal('order-modal')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('order-modal')">✕</button>
+      <h3>Place an order</h3>
+      <p>Send me a message on Facebook and I'll get back to you within 24 hours with details, availability, and payment options.</p>
+      <a href="https://www.facebook.com/rooteddailylife/" target="_blank" class="btn-primary modal-btn">Message Robin on Facebook</a>
+      <p class="modal-note">Custom orders welcome. Holiday slots fill fast — order early!</p>
+    </div>
+  </div>
+
+  <!-- Digital Modal -->
+  <div class="modal-overlay" id="digital-modal" onclick="closeModal('digital-modal')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('digital-modal')">✕</button>
+      <h3>Digital downloads</h3>
+      <p>Our digital shop is almost ready! Drop your email below and you'll be the first to know when it goes live — plus get a free download on launch day.</p>
+      <input type="email" id="digitalEmail" placeholder="your@email.com" style="width:100%;padding:10px;border:1px solid #c8b89a;border-radius:6px;margin:12px 0;font-size:0.9rem;">
+      <button class="btn-primary modal-btn" onclick="notifyDigital()">Notify me when live</button>
+    </div>
+  </div>
+
+  <!-- Freebie Confirm Modal -->
+  <div class="modal-overlay" id="freebie-modal" onclick="closeModal('freebie-modal')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('freebie-modal')">✕</button>
+      <div style="text-align:center;">
+        <div style="font-size:3rem;margin-bottom:1rem;">🎃</div>
+        <h3>You're in!</h3>
+        <p>Check your email — your Halloween coloring page is on its way. Keep an eye out for more free seasonal downloads from Robin's Craft Co.</p>
+        <button class="btn-primary modal-btn" onclick="closeModal('freebie-modal')">Got it, thanks!</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
